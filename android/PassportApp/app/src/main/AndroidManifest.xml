@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net36px.passport.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".PassportApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="登了个录"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.debug.DebugActivity"
+            android:label="登了个录">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.main.MainActivity" />
+        <activity android:name=".ui.unlock.UnlockWithPinActivity" />
+        <activity android:name=".ui.unlock.UnlockWithGraphActivity" />
+        <activity android:name=".ui.password.PasswordDisplayActivity" />
+
+        <activity android:name=".ui.credential.CredentialDetailActivity" />
+        <activity android:name=".ui.credential.CredentialEditActivity" />
+        <activity android:name=".ui.credential.CredentialSelectActivity" />
+        <activity android:name=".ui.login.LoginActivity" />
+        <activity android:name=".ui.query.QueryActivity" />
+        <activity android:name=".ui.scan.CodeScannerActivity" />
+        <activity android:name=".ui.signup.SignUpActivity" />
+
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="android:screenOrientation" />
+
+    </application>
+
+</manifest>

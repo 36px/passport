@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="在此输入要登录的网址"
+        android:inputType="textPersonName"
+        android:layout_marginTop="30sp"
+        android:text="https://github.com/" />
+
+    <ImageButton
+        android:id="@+id/imageButtonScanCode"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_margin="30sp"
+        android:scaleType="fitXY"
+        android:textAlignment="center"
+        app:srcCompat="@drawable/code_scan" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="6"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/buttonQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入或者扫描要登录的网址，然后按“查询”按钮。"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="6"
+        android:text="" />
+
+</LinearLayout>
